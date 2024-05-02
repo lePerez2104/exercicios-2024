@@ -191,8 +191,10 @@ main header {
 
 /* SESSÃO DO VIDEO DE APRESENTAÇÃO */
 #container {
-    width: 790px;
+    width: 783px;
     padding: 20px 10px;
+    margin-left: 5%;
+
 }
 
 #container h3 {
@@ -200,19 +202,9 @@ main header {
     font-weight: 900;
     font-size: 20px;
     line-height: 25px;
-    letter-spacing: 5%;
+    letter-spacing: 1px;
     color: #ED7839;
     text-align: justify;
-    margin-left: 2%;
-    right: 50%;
-}
-
-#sessao_video {
-    display: flex;
-    justify-content: space-around;
-    position: fixed;
-    right: 0;
-    
 }
 
 div iframe {
@@ -302,7 +294,7 @@ div iframe {
 }
 
 #citacao {
-    width: 239px;
+    width: 242px;
     height: 25px;
     top: 15%;
     right: 2%;
@@ -316,8 +308,9 @@ div iframe {
     font-size: 14px;
     color: #ED7839;
     line-height: 25px;
-    letter-spacing: 5%;
+    letter-spacing: 1px;
     text-align: right;
+    padding-bottom: 5%;
 }
 
 #detalhes {
@@ -346,7 +339,7 @@ div iframe {
 
 #citacao_box {
     width: 242px;
-    height: 380px;
+    height: 396px;
     justify-content: center;
     align-items: center;
     border: 1px solid #ECECEC;
@@ -406,6 +399,5 @@ div iframe {
 
 #citacao_texto2 {
     padding: 15px;
-
 }
 
