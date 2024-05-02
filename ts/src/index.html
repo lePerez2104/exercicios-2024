@@ -6,8 +6,111 @@
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="./src/css/style.css">
 </head>
 <body>
   <app-root></app-root>
+
+      <!-- MENU LATERAL -->
+      <nav id="menu">
+
+        <div id="box_nome_evento">
+            <p id="nome_evento">SLACA 2019</p>
+        </div>
+        <div id="item_logo">
+            <img src="./src/imagens/logo_evento.png" alt="logo do evento SLACA 19">
+        </div>
+        <div class="item_desativado">
+            <p>Apresentação</p>
+        </div>
+        <div class="item_desativado">
+            <p>Comitês</p>
+        </div>
+        <div class="item_desativado">
+            <p>Autores</p>
+        </div>
+        <div class="item_desativado">
+            <p>Eixos temáticos</p>
+        </div>
+        <div class="item_ativado">
+            <span></span>
+            <p>Trabalhos</p>
+        </div>
+        <div class="item_desativado">
+            <p>Contato</p>
+        </div>
+    </nav>
+
+    <!-- SESSÃO PRINCIPAL -->
+    <main>
+
+        <!-- CABEÇALHO -->
+        <header>
+            <div id="informacoes">
+                <p>Anais do Simpósio Latino Americano de Ciências de Alimentos</p>
+                <h1>Anais do 13º Simpósio Latino Americano de Ciência de Alimentos</h1>
+                <p>ISSN: 1234-5678</p>
+            </div>
+            <button id="botao_idiomas"> 
+                <img src="./src/imagens/language image.png" alt="language image">
+                <p>PT, BR</p>
+                <img src="./src/imagens/dropdown.png" alt="">
+            </button>
+            <div id="login">
+                <div class="user-info">
+                    <h4>Bem vindo!</h4>
+                    <p>alguem12@galoascience.com</p>
+                </div>
+                <div class="userPicture">
+                    <img src="./src/imagens/userPicture.png" alt="Imagem de perfil do usuario">
+                    <span>2</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- SESSÃO DO VIDEO DE APRESENTAÇÃO -->
+        <section id="container">
+            <h3>Análise sensorial de preparações funcionais desenvolvidas para escolares entre 09 e 15 anos, do município de Campinas/SP</h3>
+            <div>
+                <iframe width="784" height="439" src="https://www.youtube.com/embed/8p7RJSkrP74?si=PZBtE87NB9VH0abi&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <!-- SESSÃO DE BOTÕES E DETALHES -->
+            <div id="container_informacoes">
+                <div>
+                <button id="download_botao">
+                    <img src="./src/imagens/download.png" alt="Botão de download"><p>Download</p></button>
+                </div>
+                <button id="favoritar_botao"><img src="./src/imagens/estrela.png" alt="star"></button>
+                <button id="doi_botao"><img src="./src/imagens/doi.png" alt="doi"></button>
+            </div>
+            <div id="citacao">
+                <p id="citacao_titulo">COMO CITAR ESSE TRABALHO?</p>
+                <div id="detalhes"><p>Detalhes</p></div>
+                <div id="citacao_box">
+                    <div>
+                        <p class="citacao_texto">Tipo de Apresentação: <span class="poster">Pôster</span> <br>
+                        Eixo temático: <span class="poster">Alimentação e saúde (AS)</span> <br> 
+                        Palavras-chaves: <span>Alimentos funcionais, alimentação escolar.</span> <br> </p>
+
+                        <p class="citacao_texto"><span id="autores">Autores:</span> <br>
+                            <span id="lista_autores">Galileo Galilei <span class="destaque_cinza">¹</span> <br>
+                            Berta Lange de Morretes<span class="destaque_cinza">²</span> <br>
+                            Isaac Newton<span class="destaque_cinza">³</span> <br>
+                            Cesar Lattes<span class="destaque_cinza">¹</span> <br>
+                            Stephen Hawking <span class="destaque_cinza">⁴</span></span class="destaque_cinza"></p>
+
+                        <p class="citacao_texto"> <span class="destaque_cinza">¹Universidade Estadual de Campinas <br>
+                            ²Universidade de São Paulo <br>
+                            ³Instituto Nacional de Pesquisas Espaciais <br>
+                            ⁴Universidade Federal do Rio de Janeiro</span></p>
+                    </div>
+            </div>
+            </div>
+            
+        </section>
+
+    </main>
+
+
 </body>
 </html>
