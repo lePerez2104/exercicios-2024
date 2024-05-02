@@ -191,7 +191,7 @@ main header {
 
 /* SESSÃO DO VIDEO DE APRESENTAÇÃO */
 #container {
-    width: 783px;
+    width: 790px;
     padding: 20px 10px;
 }
 
@@ -204,6 +204,15 @@ main header {
     color: #ED7839;
     text-align: justify;
     margin-left: 2%;
+    right: 50%;
+}
+
+#sessao_video {
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    right: 0;
+    
 }
 
 div iframe {
@@ -397,5 +406,6 @@ div iframe {
 
 #citacao_texto2 {
     padding: 15px;
+
 }
 
