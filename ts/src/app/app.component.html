@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chuva Exercício ts</title>
-    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/style.css">
 </head>
 <body>
 
@@ -119,7 +119,7 @@
                     Nam eget tristique elit, at fermentum tellus. Mauris scelerisque ligula id eleifend feugiat. Donec eleifend vehicula sem nec dapibus. Integer scelerisque neque dui, in lacinia erat molestie eu. Phasellus maximus dui eget lacus porta tempor. Ut ex nibh, dignissim quis purus semper, efficitur facilisis turpis. Praesent blandit elementum ultricies. Aliquam sit amet enim sit amet nulla pulvinar lobortis consectetur non odio. Phasellus at lacus hendrerit, vulputate nisi sit amet, viverra mauris. Etiam eu scelerisque orci. Quisque sagittis, mi vitae pharetra iaculis, orci elit eleifend massa, eu posuere mauris odio id odio. Morbi eu libero luctus, consectetur lorem vel, interdum sapien. Aenean in porta arcu. Maecenas eu maximus massa.
                     <br>
                     <br>
-                    Praesent velit dolor, dignissim sed quam ac, efficitur porta justo. Pellentesque porta pharetra felis ut hendrerit. Nulla facilisi. Aliquam erat volutpat. Nunc sit amet faucibus quam. Maecenas dapibus luctus dolor at viverra. Duis nec fringilla libero. Duis risus nibh, viverra ac orci nec, iaculis dictum sem. Aliquam at malesuada arcu. Aliquam erat volutpat. Donec varius ipsum purus, ut vehicula purus placerat vitae. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span><a class="btn-show-more">ver mais</a></p>
+                    Praesent velit dolor, dignissim sed quam ac, efficitur porta justo. Pellentesque porta pharetra felis ut hendrerit. Nulla facilisi. Aliquam erat volutpat. Nunc sit amet faucibus quam. Maecenas dapibus luctus dolor at viverra. Duis nec fringilla libero. Duis risus nibh, viverra ac orci nec, iaculis dictum sem. Aliquam at malesuada arcu. Aliquam erat volutpat. Donec varius ipsum purus, ut vehicula purus placerat vitae. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span><span class="btn-show-more">ver mais</span></p>
                             
                 </div>
                 
@@ -136,7 +136,7 @@
                         <p>Sabia que o maior estímulo no desenvolvimento científico e cultural é a curiosidade? Deixe seus questionamentos ou sugestões para o autor!</p>
                     </div>
                     <div id="criarTopico">
-                        <button id="btn-create-topic"><img src="./src/imagens/icon - criar.png" alt="">criar tópico</button>
+                        <button class="btn-create-topic"><img src="./src/imagens/icon - criar.png" alt="Criar tópico">criar tópico</button>
                         <hr>
                     </div>
 
@@ -185,23 +185,24 @@
                         </div> <!-- fim da thread -->
                     </div>
 
+
                     <!-- JAVASCRIPT -->
                     <script>
-                        // Botão de Ver Mais (show-more)
-                        function verMais() 
-                         {
-                            var pontos=document.getElementById("pontos");
-                            var maisTexto=document.getElementById("ver_mais");
-                            var btnLeiaMais=document.getElementById("btn-show-more");
+                        // // Botão de Ver Mais (show-more)                        
+                        function verMais() {
+                            var pontos = document.getElementById("pontos");
+                            var maisTexto = document.getElementById("ver_mais");
+                            var btnLeiaMais = document.querySelector(".btn-show-more");
 
-                            if(pontos.style.display === "none") 
-                            {
-                                pontos.style.display="inline";
-                                maisTexto.style.display="none";
-                                btnLeiaMais.innerHTML="ver mais";
+                            var pontosDisplayStyle = window.getComputedStyle(pontos).getPropertyValue('display');
+
+                            if (pontosDisplayStyle === 'none') {
+                                pontos.style.display = "inline";
+                                maisTexto.style.display = "none";
+                                btnLeiaMais.innerHTML = "ver mais";
                             } else {
-                                pontos.style.display="none";
-                                maisTexto.style.display="inline";
+                                pontos.style.display = "none";
+                                maisTexto.style.display = "inline";
                                 btnLeiaMais.innerHTML = " ";
                             }
                         }

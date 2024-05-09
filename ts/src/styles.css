@@ -19,6 +19,14 @@ body {
   box-shadow: -9px -1px 21px 0px rgba(0, 0, 0, 0.54);
   width: 220px;
   height: 100vmax;
+  /* position: fixed; */
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+main {
+  margin-left: 12%;
 }
 
 #box_nome_evento {
@@ -194,7 +202,7 @@ main header {
   margin-left: 4.5%;
 }
 
-#container h3 {
+#container h2 {
   font-family: "Roboto", sans-serif;
   font-weight: 900;
   font-size: 20px;
@@ -389,6 +397,9 @@ div iframe {
   margin-bottom: 30px;
 }
 
+/* #discussao {
+    border: 1px solid #ECECEC;
+} */
 .titulo_box {
   width: 90%;
   height: 45px;
@@ -416,6 +427,7 @@ div iframe {
   border-radius: 3px 3px 0px 0px;
   color: #5C5C5C;
   margin-left: 4.5%;
+  cursor: pointer;
 }
 
 .conteudo_box p {
@@ -432,7 +444,7 @@ div iframe {
   display: none;
 }
 
-#btnVerMais {
+.btn-show-more {
   font-family: "Quicksand", sans-serif;
   font-weight: 700;
   font-size: 14px;
@@ -501,7 +513,7 @@ div iframe {
   z-index: -1;
 }
 
-#btnCriarTopico {
+.btn-create-topic {
   width: 133px;
   height: 32px;
   justify-content: center;
@@ -520,6 +532,10 @@ div iframe {
   cursor: pointer;
 }
 
+.container {
+  padding: 2%;
+}
+
 .thread {
   width: 90%;
   /* height: 621px; */
@@ -527,7 +543,7 @@ div iframe {
   border-radius: 4px;
   color: #5C5C5C;
   margin-left: 5%;
-  padding: 10px;
+  padding: 2%;
 }
 
 .assunto_discussao {
@@ -575,4 +591,10 @@ div iframe {
 
 footer {
   width: 100%;
+  margin-top: 4%;
+}
+
+footer > img {
+  width: 1086px;
+  margin-left: 4.5%;
 }/*# sourceMappingURL=styles.css.map */
