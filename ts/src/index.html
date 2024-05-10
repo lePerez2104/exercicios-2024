@@ -191,6 +191,30 @@
                     </div> <!-- fim da thread -->
                 </div>
 
+                <div id="conteudo">
+                    <button class="btn-show-form" onclick="mostrarFormulario()">Criar Tópico</button>
+                    <div id="formulario" style="display: none;">
+                        <h2 class="titulo_form">Assunto</h2>
+                        <label for="assunto"></label>
+                        <textarea class="caixa" name="assunto" rows="2" cols="50" placeholder="Defina um tópico sucinto para notificar os autores..." required></textarea><br><br>
+                        
+                        <h2 class="titulo_form">Conteúdo</h2>
+                        <label for="conteudo"></label>
+                        <textarea class="caixa" id="box_conteudo" name="conteudo" rows="4" cols="100%" required></textarea><br><br>
+                        <div id="btnEnviar" onclick="topicoCriado()">
+                            <input type="submit" name="acao" value="Enviar"/>
+                        </div>
+                        <div class="thread" style="display: none;">
+                            <h1 class="assunto_discussao">Assunto da pergunta aparece aqui</h1>
+                                <h1 class="usuario_discussao">Carlos Henrique Santos</h1>
+                                <p class="pergunta_discussao">Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo...</p>
+                                <div id="feedback">
+                                    <h2>Aguardando feedback dos autores</h2>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+
 
                 <!-- JAVASCRIPT -->
                 <script>
