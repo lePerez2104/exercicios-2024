@@ -188,25 +188,35 @@
                     <div id="conteudo">
                         <button class="btn-show-form" onclick="mostrarFormulario()">Criar Tópico</button>
                         <div id="formulario" style="display: none;">
+                            <h2 id="legenda_form">Tem uma dúvida ou sugestão? Compartilhe seu feedback com os autores!</h2>
                             <h2 class="titulo_form">Assunto</h2>
                             <label for="assunto"></label>
-                            <textarea class="caixa" name="assunto" rows="2" cols="50" placeholder="Defina um tópico sucinto para notificar os autores..." required></textarea><br><br>
+                            <textarea class="caixa" id="box_assunto" name="assunto" rows="2" cols="50" placeholder="Defina um tópico sucinto para notificar os autores..." required></textarea>
                             
                             <h2 class="titulo_form">Conteúdo</h2>
                             <label for="conteudo"></label>
-                            <textarea class="caixa" id="box_conteudo" name="conteudo" rows="4" cols="100%" required></textarea><br><br>
+                            <textarea class="caixa" id="box_conteudo" name="conteudo" rows="4" cols="100%" required></textarea>
                             <div id="btnEnviar" onclick="topicoCriado()">
-                                <input type="submit" name="acao" value="Enviar"/>
-                            </div>
-                            <div class="thread" style="display: none;">
-                                <h1 class="assunto_discussao">Assunto da pergunta aparece aqui</h1>
-                                    <h1 class="usuario_discussao">Carlos Henrique Santos</h1>
-                                    <p class="pergunta_discussao">Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo...</p>
-                                    <div id="feedback">
-                                        <h2>Aguardando feedback dos autores</h2>
-                                    </div>
+                                <input type="submit" name="acao" value="Enviar" onclick="topicoCriado()"/>
                             </div>
                         </div>
+                    </div>
+                
+                    <div id="conteudo2" style="display: none;">
+                        <h2>Seu tópico foi enviado com sucesso! :D</h2>
+                        <p>Agradecemos por sua contribuição, uma notificação será enviada ao seu email assim que seu tópico for respondido!</p>
+                        <span>Descubra outros trabalhos!</span> <br><br>
+                        <button class="btn-show-form" onclick="mostrarFormulario()">criar novo tópico</button>
+                    </div>
+                
+                    <div class="thread">
+                        <h1 class="assunto_discussao">Assunto da pergunta aparece aqui</h1>
+                            <h1 class="usuario_discussao">Carlos Henrique Santos</h1>
+                            <p class="pergunta_discussao">Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo...</p>
+                    </div>
+                
+                    <div id="feedback">
+                        <h2>Aguardando feedback dos autores</h2>
                     </div>
 
 
@@ -253,6 +263,89 @@
                                 conteudo.value = "";
                             })
                         }
+
+                        function criarTopico() {
+                        var conteudo = document.getElementById("conteudo");
+
+                        // Cria os elementos do formulário
+                        var formulario = document.createElement("form");
+                        var labelAssunto = document.createElement("label");
+                        var inputAssunto = document.createElement("input");
+                        var labelConteudo = document.createElement("label");
+                        var inputConteudo = document.createElement("textarea");
+                        var btnEnviar = document.createElement("button");
+
+                        // Define os atributos dos elementos do formulário
+                        formulario.setAttribute("class", "ops-topic-subject");
+                        labelAssunto.setAttribute("for", "assunto");
+                        labelAssunto.textContent = "Assunto:";
+                        inputAssunto.setAttribute("type", "text");
+                        inputAssunto.setAttribute("id", "assunto");
+
+                        // Adiciona uma quebra de linha após o campo de Assunto
+                        formulario.appendChild(document.createElement("br"));
+
+                        labelConteudo.setAttribute("for", "conteudo");
+                        labelConteudo.textContent = "Conteúdo: ";
+                        inputConteudo.setAttribute("id", "conteudo");
+                        inputConteudo.setAttribute("rows", "4");
+
+                        // Adiciona uma quebra de linha após o campo de Conteúdo
+                        formulario.appendChild(document.createElement("br"));
+
+                        btnEnviar.textContent = "Enviar";
+                        btnEnviar.setAttribute("type", "button");
+                        btnEnviar.setAttribute("onclick", "enviarFormulario()");
+
+
+                        formulario.appendChild(labelAssunto);
+                        formulario.appendChild(inputAssunto);
+                        formulario.appendChild(document.createElement("br"));
+                        formulario.appendChild(labelConteudo);
+                        formulario.appendChild(inputConteudo);
+                        formulario.appendChild(document.createElement("br"));
+                        formulario.appendChild(btnEnviar);
+
+                        conteudo.innerHTML = " ";
+                        conteudo.appendChild(formulario);
+                    }
+
+                    function enviarFormulario() {
+                        novoElemento.textContent = "Aguardando feedback dos autores";
+                    }
+
+
+
+                    var novoElemento = document.createElement("div");
+                    novoElemento.textContent = "Novo Elemento Criado";
+                    novoElemento.classList.add("dynamic-element");
+
+
+
+                    function mostrarFormulario() {
+                        var botao = document.querySelector('.btn-show-form');
+                        var formulario = document.getElementById('formulario');
+                        
+                        // Alterna a visibilidade do formulário ao clicar no botão
+                        if (formulario.style.display === 'none') {
+                            formulario.style.display = 'block';
+                            botao.style.display = 'none'; // Esconde o botão quando o formulário é exibido
+                        } else {
+                            formulario.style.display = 'none';
+                            botao.style.display = 'block'; // Exibe o botão quando o formulário é oculto
+                        }
+                    }
+
+
+                    function topicoCriado() {
+                        // Seleciona as divs de conteúdo
+                        var conteudo = document.getElementById("conteudo");
+                        var conteudo2 = document.getElementById("conteudo2");
+                        
+                        // Exibe a div conteudo2 e oculta a div conteudo
+                        conteudo.style.display = "none";
+                        conteudo2.style.display = "block";
+                    }
         
                     </script>
 

@@ -742,7 +742,232 @@ div iframe {
     display: flex;
     justify-content: center;
     text-align: center;
-} /* FIM DA ESTILIZAÇÃO EM FASE DE TESTE */
+} 
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+#conteudo {
+    width: 100%;
+    margin: 0%;
+    /* border: 1px solid black; */
+}
+
+.btn-show-form {
+    font-family: "Quicksand", sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 16px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 5px;
+    background: linear-gradient(180deg, #FEB254 0%, #F0813D 100%);
+    box-shadow: 0px 2px 2px 0px #0000003D;
+    box-shadow: 0px 0px 2px 0px #0000001F;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#formulario textarea {
+    width: 100%;
+}
+
+#legenda_form {
+    font-family: Quicksand;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.5px;
+    text-align: center;
+    color: #5C5C5C;
+    padding-bottom: 10px;
+}
+
+.titulo_form {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18.75px;
+    color: #ED7839;
+}
+
+.caixa {
+    width: 1025.52px;
+    font-family: "Quicksand", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    border: 1px solid #C4C4C4;
+    padding-left: 22.66px;
+}
+#box_assunto {
+    height: 39px;
+    line-height: 2;
+}
+
+#box_conteudo {
+    height: 113px;
+    border-bottom: none;
+    border-radius: 3px 3px 0px 0px;
+}
+
+#btnEnviar {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    background-color: #EAF1F2;
+    border: 1px solid #CCCCCC;
+    border-radius: 0px 0px 3px 3px;
+}
+
+#btnEnviar > input {
+    width: 15%;
+    height: 30px;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 16px;
+    text-align: center;
+    background: linear-gradient(#FFB354, #EE7A3A);
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+}
+
+/* Estilizando o elemento criado dinamicamente */
+.dynamic-element {
+    background-color: lightblue;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.card_footer {
+    display: flex;
+    padding-top: 10px;
+    gap: 15px;
+}
+
+.card_footer > button {
+    background: none;
+    border: none;
+    font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
+    font-weight: 350;
+    font-size: 14px;
+    line-height: 18.62px;
+    color: #757575;
+}
+
+#conteudo2 {
+    text-align: center;
+}
+
+#conteudo2 > h2 {
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21.09px;
+    text-align: center;
+    color: #ED7839;
+}
+
+#conteudo2 > p {
+    font-family: "Quicksand", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19.25px;
+    text-align: center;
+    color: #595959;
+    padding-bottom: 20px;
+}
+
+#conteudo2 > span {
+    font-family: "Quicksand", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 19.25px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #F48F44;
+    text-decoration: underline;
+}
+
+#conteudo2 > button {
+    width: 235.15px;
+    height: 32px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.thread {
+    width: 100%;
+    height: 148px;
+    border: 1px solid #E7E7E7;
+    border-radius: 4px;
+    color: #5C5C5C;
+    padding: 2%;
+    background-size: cover; /* Ajusta a imagem para cobrir todo o fundo */
+    /* filter: blur(3px); Aplica um desfoque de 5 pixels ao fundo */
+    position: absolute;
+    z-index: -1;
+} 
+
+.assunto_discussao {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #ED7839;
+}
+
+.usuario_discussao {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 600;
+    /* font-weight: 500; */
+    font-size: 12px;
+    line-height: 15px;
+    color: #5C5C5C;
+    padding-top: 3px;
+}
+
+.pergunta_discussao {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17.5px;
+    color: #4D4D4D;
+    padding-top: 10px;
+}
+
+#feedback {
+    width: 100%;
+    height: 148px;
+    /* background: transparent; */
+    filter: blur();
+    border: 1px solid #E7E7E7;
+    border-radius: 4px 0px 0px 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0.3px;
+    /* background-color: rgba(231, 231, 231, 0.3); // Cor #E7E7E7 com 30% de opacidade */
+    position: relative;
+    z-index: 1;
+    /* margin-top: -8%; */
+}
+
+#feedback h2 {
+    font-family: "Quicksand", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}  /* FIM DA ESTILIZAÇÃO EM FASE DE TESTE */
 
 
 footer {
