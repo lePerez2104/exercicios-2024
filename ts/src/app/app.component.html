@@ -186,7 +186,6 @@
                     </div>
 
                     <div id="conteudo">
-                        <button class="btn-show-form" onclick="mostrarFormulario()">Criar Tópico</button>
                         <div id="formulario" style="display: none;">
                             <h2 id="legenda_form">Tem uma dúvida ou sugestão? Compartilhe seu feedback com os autores!</h2>
                             <h2 class="titulo_form">Assunto</h2>
@@ -201,23 +200,31 @@
                             </div>
                         </div>
                     </div>
+
+                    <section id="topicoEnviado" style="display: none;">
+                        <div id="conteudo2">
+                            <h2>Seu tópico foi enviado com sucesso! :D</h2>
+                            <p>Agradecemos por sua contribuição, uma notificação será enviada ao seu email assim que seu tópico for respondido!</p>
+                            <span>Descubra outros trabalhos!</span> <br><br>
+                            <button class="btn-create-topic" onclick="retornarFormulario()">criar novo tópico</button>
+                            <hr>
+                        </div>
                 
-                    <div id="conteudo2" style="display: none;">
-                        <h2>Seu tópico foi enviado com sucesso! :D</h2>
-                        <p>Agradecemos por sua contribuição, uma notificação será enviada ao seu email assim que seu tópico for respondido!</p>
-                        <span>Descubra outros trabalhos!</span> <br><br>
-                        <button class="btn-show-form" onclick="mostrarFormulario()">criar novo tópico</button>
-                    </div>
+                        <div id="container2">
+                            <div class="thread2">
+                                <h1 class="assunto_discussao">Assunto da pergunta aparece aqui</h1>
+                                    <h1 class="usuario_discussao">Carlos Henrique Santos</h1>
+                                    <p class="pergunta_discussao">Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo...</p>
+                            </div>
                 
-                    <div class="thread">
-                        <h1 class="assunto_discussao">Assunto da pergunta aparece aqui</h1>
-                            <h1 class="usuario_discussao">Carlos Henrique Santos</h1>
-                            <p class="pergunta_discussao">Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo...</p>
-                    </div>
-                
-                    <div id="feedback">
-                        <h2>Aguardando feedback dos autores</h2>
-                    </div>
+                            <div id="feedback">
+                                <img src="confirmacao.svg" alt="ícone de confirmação de feedback">
+                                <h2>Aguardando feedback dos autores</h2>
+                                <span>Editar tópico</span>
+                            </div>
+                        </section>
+
+
 
 
                     <!-- JAVASCRIPT -->
