@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chuva Exercício ts</title>
-    <link rel="stylesheet" href="./src/style.css">
+    <link rel="stylesheet" href="./src/css/style.css">
 </head>
 <body>
 
@@ -94,7 +94,7 @@
                             Berta Lange de Morretes<span class="destaque_cinza">²</span> <br>
                             Isaac Newton<span class="destaque_cinza">³</span> <br>
                             Cesar Lattes<span class="destaque_cinza">¹</span> <br>
-                            Stephen Hawking <span class="destaque_cinza">⁴</span></span class="destaque_cinza"></p>
+                            Stephen Hawking <span class="destaque_cinza">⁴</span></span class="destaque_cinza"></p> <br><br>
 
                         <p class="citacao_texto"> <span class="destaque_cinza">¹Universidade Estadual de Campinas <br>
                             ²Universidade de São Paulo <br>
@@ -110,7 +110,7 @@
             <br><br>
                 <div class="titulo_box">Resumo</div>
                 <div class="conteudo_box" onclick="verMais()">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae turpis auctor, mollis felis ut, commodo turpis. Phasellus felis mauris, egestas eget cursus et, iaculis quis lacus. Fusce auctor eros sed magna ultricies gravida. Etiam aliquam dictum nisl, vel aliquet enim accumsan sit amet. Donec finibus nisi tellus, ut viverra lorem vestibulum ut.  Phasellus condimentum orci id leo condimentum lobortis et non lorem. Sed id nisl metus. Quisque sollicitudin ligula in sapien scelerisque, ac gravida eros vestibulum Phasellus condimentum orci id leo condimentum lobortis et non lorem. Sed id nisl metus. Quisque sollicitudin ligula in sapien scelerisque, ac gravida eros vestibulum. Etiam aliquam dictum nisl, vel aliquet enim accumsan sit ametl accumsant<span id="pontos">...</span><span id="ver_mais">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae turpis auctor, mollis felis ut, commodo turpis. Phasellus felis mauris, egestas eget cursus et, iaculis quis lacus. Fusce auctor eros sed magna ultricies gravida. Etiam aliquam dictum nisl, vel aliquet enim accumsan sit amet. Donec finibus nisi tellus, ut viverra lorem vestibulum ut.  Phasellus condimentum orci id leo condimentum lobortis et non lorem. Sed id nisl metus. Quisque sollicitudin ligula in sapien scelerisque, ac gravida eros vestibulum Phasellus condimentum orci id leo condimentum lobortis et non lorem. Sed id nisl metus. Quisque sollicitudin ligula in sapien scelerisque, ac gravida eros vestibulum. Etiam aliquam dictum nisl, vel aliquet enim accumsan sit ametl accumsant<span id="pontos">...</span><span id="ver_mais" style="display: none;">
                     <br>
                     <br>
                     Fusce vitae luctus dui. Donec id euismod mauris, in volutpat urna. Proin dapibus consequat feugiat. Proin dictum justo arcu, quis vestibulum augue lacinia quis. Sed dignissim dui nulla, ut faucibus mauris sodales id. Aliquam erat volutpat. Maecenas dolor enim, tincidunt id elit non, suscipit interdum turpis. Etiam finibus urna libero, eget interdum eros volutpat ullamcorper. Pellentesque et pretium lorem. Aenean interdum quis diam ac porttitor. Cras nec ipsum pulvinar, pharetra libero non, ornare enim. Etiam in laoreet odio.
@@ -122,11 +122,11 @@
                     Praesent velit dolor, dignissim sed quam ac, efficitur porta justo. Pellentesque porta pharetra felis ut hendrerit. Nulla facilisi. Aliquam erat volutpat. Nunc sit amet faucibus quam. Maecenas dapibus luctus dolor at viverra. Duis nec fringilla libero. Duis risus nibh, viverra ac orci nec, iaculis dictum sem. Aliquam at malesuada arcu. Aliquam erat volutpat. Donec varius ipsum purus, ut vehicula purus placerat vitae. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span><span class="btn-show-more">ver mais</span></p>
                             
                 </div>
-                
             </section>
+
             <section id="discussao">
                 <div class="titulo_box">Discussões</div>
-                <div id="conteudo_box2">
+                <div id="conteudo_box">
                     <h2>Compartilhe suas ideias ou dúvidas com os autores!</h2>
                     <div id="icones_box"><img src="./src/imagens/icone1.svg" alt="">
                         <img src="./src/imagens/icone2.svg" alt="">
@@ -136,9 +136,56 @@
                         <p>Sabia que o maior estímulo no desenvolvimento científico e cultural é a curiosidade? Deixe seus questionamentos ou sugestões para o autor!</p>
                     </div>
                     <div id="criarTopico">
-                        <button class="btn-create-topic"><img src="./src/imagens/icon - criar.png" alt="Criar tópico">criar tópico</button>
+                        <button class="btn-create-topic" onclick="mostrarFormulario()"><img src="./src/imagens/icon - criar.png" alt="Criar tópico">criar tópico</button>
                         <hr>
                     </div>
+                </div>
+
+
+                    <section id="novoTopico">
+                        <div id="form" class="conteudo2" style="display: none;">
+                            <div id="formulario">
+                                <h2 id="legenda_form">Tem uma dúvida ou sugestão? Compartilhe seu feedback com os autores!</h2>
+                                <h2 class="titulo_form">Assunto</h2>
+                                <label for="assunto"></label>
+                                <textarea class="caixa" id="box_assunto" name="assunto" rows="2" cols="50" placeholder="Defina um tópico sucinto para notificar os autores..." required></textarea>
+                                
+                                <h2 class="titulo_form">Conteúdo</h2>
+                                <label for="conteudo2"></label>
+                                <textarea class="caixa" id="box_conteudo2" name="conteudo2" rows="4" cols="100%" required></textarea>
+                                <div id="btnEnviar" onclick="topicoCriado()">
+                                    <input type="submit" name="acao" value="Enviar" onclick="topicoCriado()"/>
+                                </div>
+                                <br> <hr>
+                            </div>
+                        </div>
+                    
+
+                        <div id="topicoEnviado" style="display: none;">
+                            <div id="conteudo2">
+                                <h2>Seu tópico foi enviado com sucesso! :D</h2>
+                                <p>Agradecemos por sua contribuição, uma notificação será enviada ao seu email assim que seu tópico for respondido!</p>
+                                <span>Descubra outros trabalhos!</span> <br><br>
+                                <button class="btn-create-topic" onclick="retornarFormulario()">criar novo tópico</button>
+                                <hr>
+                            </div>
+                    
+                            <div id="container2">
+                                <div class="thread2">
+                                    <h1 class="assunto_discussao">Assunto da pergunta aparece aqui</h1>
+                                        <h1 class="usuario_discussao">Carlos Henrique Santos</h1>
+                                        <p class="pergunta_discussao">Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo...</p>
+                                </div>
+                    
+                                <div id="feedback">
+                                    <img src="confirmacao.svg" alt="ícone de confirmação de feedback">
+                                    <h2>Aguardando feedback dos autores</h2>
+                                    <span>Editar tópico</span>
+                                </div>
+                            </div>
+                        </div>
+                        </section>
+                
 
                     <!-- FÓRUM DE DISCUSSÃO -->
                     <div class="container">
@@ -174,55 +221,8 @@
                                 <button>1 like</button>
                                 <button>1 resposta</button>
                             </div>
-                            <div style="display: none;" class="respostas">
-                                <p>Sim deve ter curso!</p>
-                                <hr>
-                                <form>
-                                    <textarea></textarea>
-                                    <input type="submit" name="acao" value="Enviar"/>
-                                </form>
-                            </div>
                         </div> <!-- fim da thread -->
                     </div>
-
-                    <div id="conteudo">
-                        <div id="formulario" style="display: none;">
-                            <h2 id="legenda_form">Tem uma dúvida ou sugestão? Compartilhe seu feedback com os autores!</h2>
-                            <h2 class="titulo_form">Assunto</h2>
-                            <label for="assunto"></label>
-                            <textarea class="caixa" id="box_assunto" name="assunto" rows="2" cols="50" placeholder="Defina um tópico sucinto para notificar os autores..." required></textarea>
-                            
-                            <h2 class="titulo_form">Conteúdo</h2>
-                            <label for="conteudo"></label>
-                            <textarea class="caixa" id="box_conteudo" name="conteudo" rows="4" cols="100%" required></textarea>
-                            <div id="btnEnviar" onclick="topicoCriado()">
-                                <input type="submit" name="acao" value="Enviar" onclick="topicoCriado()"/>
-                            </div>
-                        </div>
-                    </div>
-
-                    <section id="topicoEnviado" style="display: none;">
-                        <div id="conteudo2">
-                            <h2>Seu tópico foi enviado com sucesso! :D</h2>
-                            <p>Agradecemos por sua contribuição, uma notificação será enviada ao seu email assim que seu tópico for respondido!</p>
-                            <span>Descubra outros trabalhos!</span> <br><br>
-                            <button class="btn-create-topic" onclick="retornarFormulario()">criar novo tópico</button>
-                            <hr>
-                        </div>
-                
-                        <div id="container2">
-                            <div class="thread2">
-                                <h1 class="assunto_discussao">Assunto da pergunta aparece aqui</h1>
-                                    <h1 class="usuario_discussao">Carlos Henrique Santos</h1>
-                                    <p class="pergunta_discussao">Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo...</p>
-                            </div>
-                
-                            <div id="feedback">
-                                <img src="confirmacao.svg" alt="ícone de confirmação de feedback">
-                                <h2>Aguardando feedback dos autores</h2>
-                                <span>Editar tópico</span>
-                            </div>
-                        </section>
 
 
 
@@ -271,100 +271,51 @@
                             })
                         }
 
-                        function criarTopico() {
-                        var conteudo = document.getElementById("conteudo");
+                        // FORMULÁRIO DE CRIAR TÓPICO
+                        function mostrarFormulario() {
+                            // Seleciona as divs
+                            var conteudoBox = document.getElementById("conteudo_box");
+                            var form = document.getElementById("form");
 
-                        // Cria os elementos do formulário
-                        var formulario = document.createElement("form");
-                        var labelAssunto = document.createElement("label");
-                        var inputAssunto = document.createElement("input");
-                        var labelConteudo = document.createElement("label");
-                        var inputConteudo = document.createElement("textarea");
-                        var btnEnviar = document.createElement("button");
-
-                        // Define os atributos dos elementos do formulário
-                        formulario.setAttribute("class", "ops-topic-subject");
-                        labelAssunto.setAttribute("for", "assunto");
-                        labelAssunto.textContent = "Assunto:";
-                        inputAssunto.setAttribute("type", "text");
-                        inputAssunto.setAttribute("id", "assunto");
-
-                        // Adiciona uma quebra de linha após o campo de Assunto
-                        formulario.appendChild(document.createElement("br"));
-
-                        labelConteudo.setAttribute("for", "conteudo");
-                        labelConteudo.textContent = "Conteúdo: ";
-                        inputConteudo.setAttribute("id", "conteudo");
-                        inputConteudo.setAttribute("rows", "4");
-
-                        // Adiciona uma quebra de linha após o campo de Conteúdo
-                        formulario.appendChild(document.createElement("br"));
-
-                        btnEnviar.textContent = "Enviar";
-                        btnEnviar.setAttribute("type", "button");
-                        btnEnviar.setAttribute("onclick", "enviarFormulario()");
-
-
-                        formulario.appendChild(labelAssunto);
-                        formulario.appendChild(inputAssunto);
-                        formulario.appendChild(document.createElement("br"));
-                        formulario.appendChild(labelConteudo);
-                        formulario.appendChild(inputConteudo);
-                        formulario.appendChild(document.createElement("br"));
-                        formulario.appendChild(btnEnviar);
-
-                        conteudo.innerHTML = " ";
-                        conteudo.appendChild(formulario);
-                    }
-
-                    function enviarFormulario() {
-                        novoElemento.textContent = "Aguardando feedback dos autores";
-                    }
-
-
-
-                    var novoElemento = document.createElement("div");
-                    novoElemento.textContent = "Novo Elemento Criado";
-                    novoElemento.classList.add("dynamic-element");
-
-
-
-                    function mostrarFormulario() {
-                        var botao = document.querySelector('.btn-show-form');
-                        var formulario = document.getElementById('formulario');
-                        
-                        // Alterna a visibilidade do formulário ao clicar no botão
-                        if (formulario.style.display === 'none') {
-                            formulario.style.display = 'block';
-                            botao.style.display = 'none'; // Esconde o botão quando o formulário é exibido
-                        } else {
-                            formulario.style.display = 'none';
-                            botao.style.display = 'block'; // Exibe o botão quando o formulário é oculto
-                        }
-                    }
-
+                            // Substitui o conteúdo de conteudo_box pelo conteúdo de form
+                            conteudoBox.innerHTML = form.innerHTML;
+                            }
+                            
 
                     function topicoCriado() {
-                        // Seleciona as divs de conteúdo
-                        var conteudo = document.getElementById("conteudo");
-                        var conteudo2 = document.getElementById("conteudo2");
+                        var conteudo = document.getElementById('conteudo');
+                        var topicoEnviado = document.getElementById('topicoEnviado');
+
+                        conteudo.style.display = 'none';
+                        topicoEnviado.style.display = 'block';
+                    }
+
+
+                    function retornarFormulario() {
+                        var botao = document.querySelector('.btn-create-topic');
+                        var topicoEnviado = document.getElementById('topicoEnviado');
+                        var conteudo = document.getElementById('conteudo');
                         
-                        // Exibe a div conteudo2 e oculta a div conteudo
-                        conteudo.style.display = "none";
-                        conteudo2.style.display = "block";
+                        if (topicoEnviado.style.display === 'none') {
+                            topicoEnviado.style.display = 'block';
+                            botao.style.display = 'none';
+                        } else {
+                            topicoEnviado.style.display = 'none';
+                            conteudo.style.display = 'block';
+                        }
                     }
         
                     </script>
 
-                </div>
+                
             </section>
 
     <!-- RODAPÉ -->
-    <section>
+    <!-- <section>
          <div>
             <footer><img src="./src/imagens/imagem - footer.svg" alt=""></footer>
             </div>
-    </section>
+    </section> -->
 
     </main>
 

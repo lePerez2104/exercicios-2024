@@ -1,281 +1,323 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Ts</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <link rel="stylesheet" href="./src/style.css">
-  <!-- <link rel="stylesheet" href="./src/css/style.css"> -->
-  
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chuva Exercício ts</title>
+    <link rel="stylesheet" href="./src/css/style.css">
 </head>
 <body>
-  <app-root></app-root>
 
-  <!-- MENU LATERAL -->
-  <nav id="menu">
+    <!-- MENU LATERAL -->
+    <nav id="menu">
 
-    <div id="box_nome_evento">
-        <p id="nome_evento">SLACA 2019</p>
-    </div>
-    <div id="item_logo">
-        <img src="./src/imagens/logo_evento.svg" alt="logo do evento SLACA 19">
-    </div>
-    <div class="item_desativado">
-        <p>Apresentação</p>
-    </div>
-    <div class="item_desativado">
-        <p>Comitês</p>
-    </div>
-    <div class="item_desativado">
-        <p>Autores</p>
-    </div>
-    <div class="item_desativado">
-        <p>Eixos temáticos</p>
-    </div>
-    <div class="item_ativado">
-        <span></span>
-        <p>Trabalhos</p>
-    </div>
-    <div class="item_desativado">
-        <p>Contato</p>
-    </div>
-</nav>
-
-<!-- SESSÃO PRINCIPAL -->
-<main>
-
-    <!-- CABEÇALHO -->
-    <header>
-        <div id="informacoes">
-            <p>Anais do Simpósio Latino Americano de Ciências de Alimentos</p>
-            <h1>Anais do 13º Simpósio Latino Americano de Ciência de Alimentos</h1>
-            <p>ISSN: 1234-5678</p>
+        <div id="box_nome_evento">
+            <p id="nome_evento">SLACA 2019</p>
         </div>
-        <button id="botao_idiomas"> 
-            <img src="./src/imagens/language image.svg" alt="language image">
-            <p>PT, BR</p>
-            <img src="./src/imagens/dropdown.svg" alt="">
-        </button>
-        <div id="login">
-            <div class="user-info">
-                <h4>Bem vindo!</h4>
-                <p>alguem12@galoascience.com</p>
+        <div id="item_logo">
+            <img src="./src/imagens/logo_evento.svg" alt="logo do evento SLACA 19">
+        </div>
+        <div class="item_desativado">
+            <p>Apresentação</p>
+        </div>
+        <div class="item_desativado">
+            <p>Comitês</p>
+        </div>
+        <div class="item_desativado">
+            <p>Autores</p>
+        </div>
+        <div class="item_desativado">
+            <p>Eixos temáticos</p>
+        </div>
+        <div class="item_ativado">
+            <span></span>
+            <p>Trabalhos</p>
+        </div>
+        <div class="item_desativado">
+            <p>Contato</p>
+        </div>
+    </nav>
+
+    <!-- SESSÃO PRINCIPAL -->
+    <main>
+
+        <!-- CABEÇALHO -->
+        <header>
+            <div id="informacoes">
+                <p>Anais do Simpósio Latino Americano de Ciências de Alimentos</p>
+                <h1>Anais do 13º Simpósio Latino Americano de Ciência de Alimentos</h1>
+                <p>ISSN: 1234-5678</p>
             </div>
-            <div class="userPicture">
-                <img src="./src/imagens/userPicture.png" alt="Imagem de perfil do usuario">
-                <span>2</span>
+            <button id="botao_idiomas"> 
+                <img src="./src/imagens/language image.svg" alt="language image">
+                <p>PT, BR</p>
+                <img src="./src/imagens/dropdown.svg" alt="">
+            </button>
+            <div id="login">
+                <div class="user-info">
+                    <h4>Bem vindo!</h4>
+                    <p>alguem12@galoascience.com</p>
+                </div>
+                <div class="userPicture">
+                    <img src="./src/imagens/userPicture.png" alt="Imagem de perfil do usuario">
+                    <span>2</span>
+                </div>
             </div>
-        </div>
-    </header>
+        </header>
 
-    <!-- SESSÃO DO VIDEO DE APRESENTAÇÃO -->
-    <section id="container">
-        <h2>Análise sensorial de preparações funcionais desenvolvidas para escolares entre 09 e 15 anos, do município de Campinas/SP</h2>
-        <div>
-            <iframe width="783" height="439" src="https://www.youtube.com/embed/8p7RJSkrP74?si=PZBtE87NB9VH0abi&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
-        <!-- SESSÃO DE BOTÕES E DETALHES -->
-        <div id="container_informacoes">
+        <!-- SESSÃO DO VIDEO DE APRESENTAÇÃO -->
+        <section id="container">
+            <h2>Análise sensorial de preparações funcionais desenvolvidas para escolares entre 09 e 15 anos, do município de Campinas/SP</h2>
             <div>
-            <button id="download_botao">
-                <img src="./src/imagens/download.svg" alt="Botão de download"><p>Download</p></button>
+                <iframe width="783" height="439" src="https://www.youtube.com/embed/8p7RJSkrP74?si=PZBtE87NB9VH0abi&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
-            <button id="favoritar_botao"><img src="./src/imagens/favoritar_estrela.svg" alt="star"></button>
-            <button id="doi_botao"><img src="./src/imagens/doi.svg" alt="doi"></button>
-        </div>
-        <div id="citacao">
-            <p id="citacao_titulo">COMO CITAR ESSE TRABALHO?</p>
-            <div id="detalhes"><p></p>Detalhes</div>
-            <div id="citacao_box">
+            <!-- SESSÃO DE BOTÕES E DETALHES -->
+            <div id="container_informacoes">
                 <div>
-                    <p class="citacao_texto">Tipo de Apresentação: <span class="poster">Pôster</span> <br>
-                    Eixo temático: <span class="poster">Alimentação e saúde (AS)</span> <br> 
-                    Palavras-chaves: <span>Alimentos funcionais, alimentação escolar.</span> <br> </p>
-
-                    <p class="citacao_texto"><span id="autores">Autores:</span> <br>
-                        <span id="lista_autores">Galileo Galilei <span class="destaque_cinza">¹</span> <br>
-                        Berta Lange de Morretes<span class="destaque_cinza">²</span> <br>
-                        Isaac Newton<span class="destaque_cinza">³</span> <br>
-                        Cesar Lattes<span class="destaque_cinza">¹</span> <br>
-                        Stephen Hawking <span class="destaque_cinza">⁴</span></span class="destaque_cinza"></p>
-
-                    <p class="citacao_texto"> <span class="destaque_cinza">¹Universidade Estadual de Campinas <br>
-                        ²Universidade de São Paulo <br>
-                        ³Instituto Nacional de Pesquisas Espaciais <br>
-                        ⁴Universidade Federal do Rio de Janeiro</span></p>
-                        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <button id="download_botao">
+                    <img src="./src/imagens/download.svg" alt="Botão de download"><p>Download</p></button>
                 </div>
-        </div>
-        </div>
-    </section>
-
-    <section id="sessao2">
-        <br><br>
-            <div class="titulo_box">Resumo</div>
-            <div class="conteudo_box" onclick="verMais()">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae turpis auctor, mollis felis ut, commodo turpis. Phasellus felis mauris, egestas eget cursus et, iaculis quis lacus. Fusce auctor eros sed magna ultricies gravida. Etiam aliquam dictum nisl, vel aliquet enim accumsan sit amet. Donec finibus nisi tellus, ut viverra lorem vestibulum ut.  Phasellus condimentum orci id leo condimentum lobortis et non lorem. Sed id nisl metus. Quisque sollicitudin ligula in sapien scelerisque, ac gravida eros vestibulum Phasellus condimentum orci id leo condimentum lobortis et non lorem. Sed id nisl metus. Quisque sollicitudin ligula in sapien scelerisque, ac gravida eros vestibulum. Etiam aliquam dictum nisl, vel aliquet enim accumsan sit ametl accumsant<span id="pontos">...</span><span id="ver_mais">
-                <br>
-                <br>
-                Fusce vitae luctus dui. Donec id euismod mauris, in volutpat urna. Proin dapibus consequat feugiat. Proin dictum justo arcu, quis vestibulum augue lacinia quis. Sed dignissim dui nulla, ut faucibus mauris sodales id. Aliquam erat volutpat. Maecenas dolor enim, tincidunt id elit non, suscipit interdum turpis. Etiam finibus urna libero, eget interdum eros volutpat ullamcorper. Pellentesque et pretium lorem. Aenean interdum quis diam ac porttitor. Cras nec ipsum pulvinar, pharetra libero non, ornare enim. Etiam in laoreet odio.
-                <br>
-                <br>
-                Nam eget tristique elit, at fermentum tellus. Mauris scelerisque ligula id eleifend feugiat. Donec eleifend vehicula sem nec dapibus. Integer scelerisque neque dui, in lacinia erat molestie eu. Phasellus maximus dui eget lacus porta tempor. Ut ex nibh, dignissim quis purus semper, efficitur facilisis turpis. Praesent blandit elementum ultricies. Aliquam sit amet enim sit amet nulla pulvinar lobortis consectetur non odio. Phasellus at lacus hendrerit, vulputate nisi sit amet, viverra mauris. Etiam eu scelerisque orci. Quisque sagittis, mi vitae pharetra iaculis, orci elit eleifend massa, eu posuere mauris odio id odio. Morbi eu libero luctus, consectetur lorem vel, interdum sapien. Aenean in porta arcu. Maecenas eu maximus massa.
-                <br>
-                <br>
-                Praesent velit dolor, dignissim sed quam ac, efficitur porta justo. Pellentesque porta pharetra felis ut hendrerit. Nulla facilisi. Aliquam erat volutpat. Nunc sit amet faucibus quam. Maecenas dapibus luctus dolor at viverra. Duis nec fringilla libero. Duis risus nibh, viverra ac orci nec, iaculis dictum sem. Aliquam at malesuada arcu. Aliquam erat volutpat. Donec varius ipsum purus, ut vehicula purus placerat vitae. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span><span class="btn-show-more">ver mais</span></p>
-                        
+                <button id="favoritar_botao"><img src="./src/imagens/favoritar_estrela.svg" alt="star"></button>
+                <button id="doi_botao"><img src="./src/imagens/doi.svg" alt="doi"></button>
             </div>
-            
+            <div id="citacao">
+                <p id="citacao_titulo">COMO CITAR ESSE TRABALHO?</p>
+                <div id="detalhes"><p></p>Detalhes</div>
+                <div id="citacao_box">
+                    <div>
+                        <p class="citacao_texto">Tipo de Apresentação: <span class="poster">Pôster</span> <br>
+                        Eixo temático: <span class="poster">Alimentação e saúde (AS)</span> <br> 
+                        Palavras-chaves: <span>Alimentos funcionais, alimentação escolar.</span> <br> </p>
+
+                        <p class="citacao_texto"><span id="autores">Autores:</span> <br>
+                            <span id="lista_autores">Galileo Galilei <span class="destaque_cinza">¹</span> <br>
+                            Berta Lange de Morretes<span class="destaque_cinza">²</span> <br>
+                            Isaac Newton<span class="destaque_cinza">³</span> <br>
+                            Cesar Lattes<span class="destaque_cinza">¹</span> <br>
+                            Stephen Hawking <span class="destaque_cinza">⁴</span></span class="destaque_cinza"></p> <br><br>
+
+                        <p class="citacao_texto"> <span class="destaque_cinza">¹Universidade Estadual de Campinas <br>
+                            ²Universidade de São Paulo <br>
+                            ³Instituto Nacional de Pesquisas Espaciais <br>
+                            ⁴Universidade Federal do Rio de Janeiro</span></p>
+                            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                    </div>
+            </div>
+            </div>
         </section>
-        <section id="discussao">
-            <div class="titulo_box">Discussões</div>
-            <div id="conteudo_box2">
-                <h2>Compartilhe suas ideias ou dúvidas com os autores!</h2>
-                <div id="icones_box"><img src="./src/imagens/icone1.svg" alt="">
-                    <img src="./src/imagens/icone2.svg" alt="">
-                    <img src="./src/imagens/icone3.svg" alt="">
-                </div>
-                <div id="frase_box">
-                    <p>Sabia que o maior estímulo no desenvolvimento científico e cultural é a curiosidade? Deixe seus questionamentos ou sugestões para o autor!</p>
-                </div>
-                <div id="criarTopico">
-                    <button class="btn-create-topic"><img src="./src/imagens/icon - criar.png" alt="Criar tópico">criar tópico</button>
-                    <hr>
-                </div>
 
-                <!-- FÓRUM DE DISCUSSÃO -->
-                <div class="container">
-                    <!-- Primeira thread -->
-                    <div class="thread">
-                        <h1 class="assunto_discussao">Assunto da pergunta aparece aqui</h1>
-                        <h1 class="usuario_discussao">Carlos Henrique Santos</h1>
-                        <p class="pergunta_discussao">Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo...</p>
-                        <div class="card_footer">
-                            <img src="./src/imagens/mais_informações.svg" alt="Mais informações">
-                            <img src="./src/imagens/favoritar.svg" alt="Ícone de favoritar">
-                            <button>1 like</button>
-                            <button>1 resposta</button>
-                        </div>
-                        <div style="display: none;" class="respostas">
-                            <p>Sim deve ter curso!</p>
-                            <hr>
-                            <form>
-                                <textarea></textarea>
-                                <input type="submit" name="acao" value="Enviar"/>
-                            </form>
-                        </div>
-                    </div> <!-- fim da thread -->
-
-                    <!-- Segunda thread -->
-                    <div class="thread">
-                        <h1 class="assunto_discussao">Assunto da pergunta aparece aqui</h1>
-                        <h1 class="usuario_discussao">Carlos Henrique Santos</h1>
-                        <p class="pergunta_discussao">Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo...</p>
-                        <div class="card_footer">
-                            <img src="./src/imagens/mais_informações.svg" alt="Mais informações">
-                            <img src="./src/imagens/favoritar.svg" alt="Ícone de favoritar">
-                            <button>1 like</button>
-                            <button>1 resposta</button>
-                        </div>
-                        <div style="display: none;" class="respostas">
-                            <p>Sim deve ter curso!</p>
-                            <hr>
-                            <form>
-                                <textarea></textarea>
-                                <input type="submit" name="acao" value="Enviar"/>
-                            </form>
-                        </div>
-                    </div> <!-- fim da thread -->
+        <section id="sessao2">
+            <br><br>
+                <div class="titulo_box">Resumo</div>
+                <div class="conteudo_box" onclick="verMais()">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae turpis auctor, mollis felis ut, commodo turpis. Phasellus felis mauris, egestas eget cursus et, iaculis quis lacus. Fusce auctor eros sed magna ultricies gravida. Etiam aliquam dictum nisl, vel aliquet enim accumsan sit amet. Donec finibus nisi tellus, ut viverra lorem vestibulum ut.  Phasellus condimentum orci id leo condimentum lobortis et non lorem. Sed id nisl metus. Quisque sollicitudin ligula in sapien scelerisque, ac gravida eros vestibulum Phasellus condimentum orci id leo condimentum lobortis et non lorem. Sed id nisl metus. Quisque sollicitudin ligula in sapien scelerisque, ac gravida eros vestibulum. Etiam aliquam dictum nisl, vel aliquet enim accumsan sit ametl accumsant<span id="pontos">...</span><span id="ver_mais" style="display: none;">
+                    <br>
+                    <br>
+                    Fusce vitae luctus dui. Donec id euismod mauris, in volutpat urna. Proin dapibus consequat feugiat. Proin dictum justo arcu, quis vestibulum augue lacinia quis. Sed dignissim dui nulla, ut faucibus mauris sodales id. Aliquam erat volutpat. Maecenas dolor enim, tincidunt id elit non, suscipit interdum turpis. Etiam finibus urna libero, eget interdum eros volutpat ullamcorper. Pellentesque et pretium lorem. Aenean interdum quis diam ac porttitor. Cras nec ipsum pulvinar, pharetra libero non, ornare enim. Etiam in laoreet odio.
+                    <br>
+                    <br>
+                    Nam eget tristique elit, at fermentum tellus. Mauris scelerisque ligula id eleifend feugiat. Donec eleifend vehicula sem nec dapibus. Integer scelerisque neque dui, in lacinia erat molestie eu. Phasellus maximus dui eget lacus porta tempor. Ut ex nibh, dignissim quis purus semper, efficitur facilisis turpis. Praesent blandit elementum ultricies. Aliquam sit amet enim sit amet nulla pulvinar lobortis consectetur non odio. Phasellus at lacus hendrerit, vulputate nisi sit amet, viverra mauris. Etiam eu scelerisque orci. Quisque sagittis, mi vitae pharetra iaculis, orci elit eleifend massa, eu posuere mauris odio id odio. Morbi eu libero luctus, consectetur lorem vel, interdum sapien. Aenean in porta arcu. Maecenas eu maximus massa.
+                    <br>
+                    <br>
+                    Praesent velit dolor, dignissim sed quam ac, efficitur porta justo. Pellentesque porta pharetra felis ut hendrerit. Nulla facilisi. Aliquam erat volutpat. Nunc sit amet faucibus quam. Maecenas dapibus luctus dolor at viverra. Duis nec fringilla libero. Duis risus nibh, viverra ac orci nec, iaculis dictum sem. Aliquam at malesuada arcu. Aliquam erat volutpat. Donec varius ipsum purus, ut vehicula purus placerat vitae. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span><span class="btn-show-more">ver mais</span></p>
+                            
                 </div>
+            </section>
 
-                <div id="conteudo">
-                    <button class="btn-show-form" onclick="mostrarFormulario()">Criar Tópico</button>
-                    <div id="formulario" style="display: none;">
-                        <h2 class="titulo_form">Assunto</h2>
-                        <label for="assunto"></label>
-                        <textarea class="caixa" name="assunto" rows="2" cols="50" placeholder="Defina um tópico sucinto para notificar os autores..." required></textarea><br><br>
-                        
-                        <h2 class="titulo_form">Conteúdo</h2>
-                        <label for="conteudo"></label>
-                        <textarea class="caixa" id="box_conteudo" name="conteudo" rows="4" cols="100%" required></textarea><br><br>
-                        <div id="btnEnviar" onclick="topicoCriado()">
-                            <input type="submit" name="acao" value="Enviar"/>
-                        </div>
-                        <div class="thread" style="display: none;">
-                            <h1 class="assunto_discussao">Assunto da pergunta aparece aqui</h1>
-                                <h1 class="usuario_discussao">Carlos Henrique Santos</h1>
-                                <p class="pergunta_discussao">Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo...</p>
-                                <div id="feedback">
-                                    <h2>Aguardando feedback dos autores</h2>
-                                </div>
-                        </div>
+            <section id="discussao">
+                <div class="titulo_box">Discussões</div>
+                <div id="conteudo_box">
+                    <h2>Compartilhe suas ideias ou dúvidas com os autores!</h2>
+                    <div id="icones_box"><img src="./src/imagens/icone1.svg" alt="">
+                        <img src="./src/imagens/icone2.svg" alt="">
+                        <img src="./src/imagens/icone3.svg" alt="">
+                    </div>
+                    <div id="frase_box">
+                        <p>Sabia que o maior estímulo no desenvolvimento científico e cultural é a curiosidade? Deixe seus questionamentos ou sugestões para o autor!</p>
+                    </div>
+                    <div id="criarTopico">
+                        <button class="btn-create-topic" onclick="mostrarFormulario()"><img src="./src/imagens/icon - criar.png" alt="Criar tópico">criar tópico</button>
+                        <hr>
                     </div>
                 </div>
 
 
-                <!-- JAVASCRIPT -->
-                <script>
-                    // // Botão de Ver Mais (show-more)                        
-                    function verMais() {
-                        var pontos = document.getElementById("pontos");
-                        var maisTexto = document.getElementById("ver_mais");
-                        var btnLeiaMais = document.querySelector(".btn-show-more");
+                    <section id="novoTopico">
+                        <div id="form" class="conteudo2" style="display: none;">
+                            <div id="formulario">
+                                <h2 id="legenda_form">Tem uma dúvida ou sugestão? Compartilhe seu feedback com os autores!</h2>
+                                <h2 class="titulo_form">Assunto</h2>
+                                <label for="assunto"></label>
+                                <textarea class="caixa" id="box_assunto" name="assunto" rows="2" cols="50" placeholder="Defina um tópico sucinto para notificar os autores..." required></textarea>
+                                
+                                <h2 class="titulo_form">Conteúdo</h2>
+                                <label for="conteudo2"></label>
+                                <textarea class="caixa" id="box_conteudo2" name="conteudo2" rows="4" cols="100%" required></textarea>
+                                <div id="btnEnviar" onclick="topicoCriado()">
+                                    <input type="submit" name="acao" value="Enviar" onclick="topicoCriado()"/>
+                                </div>
+                                <br> <hr>
+                            </div>
+                        </div>
+                    
 
-                        var pontosDisplayStyle = window.getComputedStyle(pontos).getPropertyValue('display');
+                        <div id="topicoEnviado" style="display: none;">
+                            <div id="conteudo2">
+                                <h2>Seu tópico foi enviado com sucesso! :D</h2>
+                                <p>Agradecemos por sua contribuição, uma notificação será enviada ao seu email assim que seu tópico for respondido!</p>
+                                <span>Descubra outros trabalhos!</span> <br><br>
+                                <button class="btn-create-topic" onclick="retornarFormulario()">criar novo tópico</button>
+                                <hr>
+                            </div>
+                    
+                            <div id="container2">
+                                <div class="thread2">
+                                    <h1 class="assunto_discussao">Assunto da pergunta aparece aqui</h1>
+                                        <h1 class="usuario_discussao">Carlos Henrique Santos</h1>
+                                        <p class="pergunta_discussao">Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo...</p>
+                                </div>
+                    
+                                <div id="feedback">
+                                    <img src="confirmacao.svg" alt="ícone de confirmação de feedback">
+                                    <h2>Aguardando feedback dos autores</h2>
+                                    <span>Editar tópico</span>
+                                </div>
+                            </div>
+                        </div>
+                        </section>
+                
 
-                        if (pontosDisplayStyle === 'none') {
-                            pontos.style.display = "inline";
-                            maisTexto.style.display = "none";
-                            btnLeiaMais.innerHTML = "ver mais";
+                    <!-- FÓRUM DE DISCUSSÃO -->
+                    <div class="container">
+                        <!-- Primeira thread -->
+                        <div class="thread">
+                            <h1 class="assunto_discussao">Assunto da pergunta aparece aqui</h1>
+                            <h1 class="usuario_discussao">Carlos Henrique Santos</h1>
+                            <p class="pergunta_discussao">Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo...</p>
+                            <div class="card_footer">
+                                <img src="./src/imagens/mais_informações.svg" alt="Mais informações">
+                                <img src="./src/imagens/favoritar.svg" alt="Ícone de favoritar">
+                                <button>1 like</button>
+                                <button>1 resposta</button>
+                            </div>
+                            <div style="display: none;" class="respostas">
+                                <p>Sim deve ter curso!</p>
+                                <hr>
+                                <form>
+                                    <textarea></textarea>
+                                    <input type="submit" name="acao" value="Enviar"/>
+                                </form>
+                            </div>
+                        </div> <!-- fim da thread -->
+
+                        <!-- Segunda thread -->
+                        <div class="thread">
+                            <h1 class="assunto_discussao">Assunto da pergunta aparece aqui</h1>
+                            <h1 class="usuario_discussao">Carlos Henrique Santos</h1>
+                            <p class="pergunta_discussao">Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo...</p>
+                            <div class="card_footer">
+                                <img src="./src/imagens/mais_informações.svg" alt="Mais informações">
+                                <img src="./src/imagens/favoritar.svg" alt="Ícone de favoritar">
+                                <button>1 like</button>
+                                <button>1 resposta</button>
+                            </div>
+                        </div> <!-- fim da thread -->
+                    </div>
+
+
+
+
+                    <!-- JAVASCRIPT -->
+                    <script>
+                        // // Botão de Ver Mais (show-more)                        
+                        function verMais() {
+                            var pontos = document.getElementById("pontos");
+                            var maisTexto = document.getElementById("ver_mais");
+                            var btnLeiaMais = document.querySelector(".btn-show-more");
+
+                            var pontosDisplayStyle = window.getComputedStyle(pontos).getPropertyValue('display');
+
+                            if (pontosDisplayStyle === 'none') {
+                                pontos.style.display = "inline";
+                                maisTexto.style.display = "none";
+                                btnLeiaMais.innerHTML = "ver mais";
+                            } else {
+                                pontos.style.display = "none";
+                                maisTexto.style.display = "inline";
+                                btnLeiaMais.innerHTML = " ";
+                            }
+                        }
+
+                        // Fórum de Discussão
+                        let buttonsResposta = document.querySelectorAll('.thread button');
+
+                        for(let i = 0; i < buttonsResposta.length; i++) 
+                        {
+                            buttonsResposta[i].addEventListener('click',()=>{
+                                let respostas = document.querySelectorAll('.respostas');
+                                respostas[i].style.display = "block";
+                            })
+                        }
+
+                        let forms = document.querySelectorAll('form');
+
+                        for(let i = 0; i < forms.length; i++) 
+                        {
+                            forms[i].addEventListener('submit',(e)=>{
+                                e.preventDefault();
+                                let conteudo = document.querySelectorAll('textarea')[i];
+                                forms[i].insertAdjacentHTML('beforebegin', '<p>'+conteudo.value+'</p>')
+                                conteudo.value = "";
+                            })
+                        }
+
+                        // FORMULÁRIO DE CRIAR TÓPICO
+                        function mostrarFormulario() {
+                            // Seleciona as divs
+                            var conteudoBox = document.getElementById("conteudo_box");
+                            var form = document.getElementById("form");
+
+                            // Substitui o conteúdo de conteudo_box pelo conteúdo de form
+                            conteudoBox.innerHTML = form.innerHTML;
+                            }
+                            
+
+                    function topicoCriado() {
+                        var conteudo = document.getElementById('conteudo');
+                        var topicoEnviado = document.getElementById('topicoEnviado');
+
+                        conteudo.style.display = 'none';
+                        topicoEnviado.style.display = 'block';
+                    }
+
+
+                    function retornarFormulario() {
+                        var botao = document.querySelector('.btn-create-topic');
+                        var topicoEnviado = document.getElementById('topicoEnviado');
+                        var conteudo = document.getElementById('conteudo');
+                        
+                        if (topicoEnviado.style.display === 'none') {
+                            topicoEnviado.style.display = 'block';
+                            botao.style.display = 'none';
                         } else {
-                            pontos.style.display = "none";
-                            maisTexto.style.display = "inline";
-                            btnLeiaMais.innerHTML = " ";
+                            topicoEnviado.style.display = 'none';
+                            conteudo.style.display = 'block';
                         }
                     }
+        
+                    </script>
 
-                    // Fórum de Discussão
-                    let buttonsResposta = document.querySelectorAll('.thread button');
+                
+            </section>
 
-                    for(let i = 0; i < buttonsResposta.length; i++) 
-                    {
-                        buttonsResposta[i].addEventListener('click',()=>{
-                            let respostas = document.querySelectorAll('.respostas');
-                            respostas[i].style.display = "block";
-                        })
-                    }
-
-                    let forms = document.querySelectorAll('form');
-
-                    for(let i = 0; i < forms.length; i++) 
-                    {
-                        forms[i].addEventListener('submit',(e)=>{
-                            e.preventDefault();
-                            let conteudo = document.querySelectorAll('textarea')[i];
-                            forms[i].insertAdjacentHTML('beforebegin', '<p>'+conteudo.value+'</p>')
-                            conteudo.value = "";
-                        })
-                    }
-    
-                </script>
-
+    <!-- RODAPÉ -->
+    <!-- <section>
+         <div>
+            <footer><img src="./src/imagens/imagem - footer.svg" alt=""></footer>
             </div>
-        </section>
+    </section> -->
 
-<!-- RODAPÉ -->
-<section>
-     <div>
-        <footer><img src="./src/imagens/imagem - footer.svg" alt=""></footer>
-        </div>
-</section>
-
-</main>
-
- 
+    </main>
 
 </body>
 </html>
-</h
