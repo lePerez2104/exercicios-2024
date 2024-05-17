@@ -135,7 +135,7 @@
                     <div id="frase_box">
                         <p>Sabia que o maior estímulo no desenvolvimento científico e cultural é a curiosidade? Deixe seus questionamentos ou sugestões para o autor!</p>
                     </div>
-                    <div id="criarTopico">
+                    <div class="criarTopico">
                         <button class="btn-create-topic" onclick="mostrarFormulario()"><img src="./src/imagens/icon - criar.png" alt="Criar tópico">criar tópico</button>
                         <hr>
                     </div>
@@ -143,31 +143,31 @@
 
 
                     <section id="novoTopico">
-                        <div id="form" class="conteudo2" style="display: none;">
+                        <div id="form" style="display: none;" class="conteudo2">
                             <div id="formulario">
                                 <h2 id="legenda_form">Tem uma dúvida ou sugestão? Compartilhe seu feedback com os autores!</h2>
                                 <h2 class="titulo_form">Assunto</h2>
                                 <label for="assunto"></label>
                                 <textarea class="caixa" id="box_assunto" name="assunto" rows="2" cols="50" placeholder="Defina um tópico sucinto para notificar os autores..." required></textarea>
-                                
+                                    
                                 <h2 class="titulo_form">Conteúdo</h2>
                                 <label for="conteudo2"></label>
                                 <textarea class="caixa" id="box_conteudo2" name="conteudo2" rows="4" cols="100%" required></textarea>
-                                <div id="btnEnviar" onclick="topicoCriado()">
+                                <div id="btnEnviar">
                                     <input type="submit" name="acao" value="Enviar" onclick="topicoCriado()"/>
                                 </div>
-                                <br> <hr>
                             </div>
                         </div>
-                    
-
+                
                         <div id="topicoEnviado" style="display: none;">
-                            <div id="conteudo2">
+                            <div class="conteudo2">
                                 <h2>Seu tópico foi enviado com sucesso! :D</h2>
                                 <p>Agradecemos por sua contribuição, uma notificação será enviada ao seu email assim que seu tópico for respondido!</p>
-                                <span>Descubra outros trabalhos!</span> <br><br>
-                                <button class="btn-create-topic" onclick="retornarFormulario()">criar novo tópico</button>
-                                <hr>
+                                <span>Descubra outros trabalhos!</span>
+                                <div class="criarTopico" onclick="retornarFormulario()">
+                                    <button class="btn-create-topic" onclick="retornarFormulario()">criar novo tópico</button> <br> <br>
+                                    <hr>
+                                </div>
                             </div>
                     
                             <div id="container2">
@@ -178,7 +178,7 @@
                                 </div>
                     
                                 <div id="feedback">
-                                    <img src="confirmacao.svg" alt="ícone de confirmação de feedback">
+                                    <img src="./src/imagens/confirmacao.svg" alt="ícone de confirmação de feedback">
                                     <h2>Aguardando feedback dos autores</h2>
                                     <span>Editar tópico</span>
                                 </div>
@@ -209,6 +209,8 @@
                                 </form>
                             </div>
                         </div> <!-- fim da thread -->
+
+                        <br>
 
                         <!-- Segunda thread -->
                         <div class="thread">
@@ -271,40 +273,25 @@
                             })
                         }
 
-                        // FORMULÁRIO DE CRIAR TÓPICO
                         function mostrarFormulario() {
-                            // Seleciona as divs
                             var conteudoBox = document.getElementById("conteudo_box");
                             var form = document.getElementById("form");
 
-                            // Substitui o conteúdo de conteudo_box pelo conteúdo de form
                             conteudoBox.innerHTML = form.innerHTML;
                             }
-                            
-
-                    function topicoCriado() {
-                        var conteudo = document.getElementById('conteudo');
-                        var topicoEnviado = document.getElementById('topicoEnviado');
-
-                        conteudo.style.display = 'none';
-                        topicoEnviado.style.display = 'block';
-                    }
 
 
-                    function retornarFormulario() {
-                        var botao = document.querySelector('.btn-create-topic');
-                        var topicoEnviado = document.getElementById('topicoEnviado');
-                        var conteudo = document.getElementById('conteudo');
+                        function topicoCriado() {
+                            var formulario = document.getElementById("formulario");
+                            var topicoEnviado = document.getElementById("topicoEnviado");
+
+                            formulario.innerHTML = topicoEnviado.innerHTML;
+                            }
                         
-                        if (topicoEnviado.style.display === 'none') {
-                            topicoEnviado.style.display = 'block';
-                            botao.style.display = 'none';
-                        } else {
-                            topicoEnviado.style.display = 'none';
-                            conteudo.style.display = 'block';
+                        function retornarFormulario() {
+                            mostrarFormulario();
                         }
-                    }
-        
+    
                     </script>
 
                 
