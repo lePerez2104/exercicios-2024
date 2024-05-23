@@ -19,7 +19,7 @@ h6 {
 }
 
 h2 {
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
 p {
@@ -446,7 +446,6 @@ main header {
 /* SESSÃO DO VIDEO DE APRESENTAÇÃO */
 #container {
   width: 783px;
-  padding: 20px 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -483,7 +482,7 @@ div iframe {
   display: flex;
   position: absolute;
   padding: 5px;
-  top: 10%;
+  top: 13%;
   right: 3.5%;
   gap: 5px;
 }
@@ -547,7 +546,7 @@ div iframe {
 
 #citacao {
   width: 242px;
-  top: 15%;
+  top: 17%;
   right: 4.5%;
   position: absolute;
 }
@@ -560,7 +559,7 @@ div iframe {
   line-height: 25px;
   letter-spacing: 1px;
   text-align: right;
-  padding-bottom: 5%;
+  padding: 3%;
 }
 
 #detalhes {
@@ -775,7 +774,7 @@ hr {
 
 .thread {
   width: 100%;
-  height: 148px;
+  height: 170px;
   border: 1px solid #E7E7E7;
   border-radius: 4px;
   box-shadow: 0px 0px 6px 0.1px #DDDDDD;
@@ -815,7 +814,7 @@ hr {
   gap: 15px;
 }
 
-.card_footer > button {
+.card_footer > span {
   background: none;
   border: none;
   font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
@@ -1028,8 +1027,7 @@ hr {
   font-weight: 900;
   line-height: 23px;
   text-align: left;
-  margin-bottom: 10px;
-  margin-top: -10px;
+  margin-top: 10px;
 }
 
 #feedback h2 {
@@ -1063,7 +1061,7 @@ hr {
 
 #card_pergunta {
   width: 100%;
-  height: 148px;
+  height: 170px;
   border: 1px solid #E7E7E7;
   border-radius: 4px;
   box-shadow: 0px 0px 6px 0.1px #DDDDDD;
@@ -1073,7 +1071,7 @@ hr {
 
 .thread_respondida {
   width: 100%;
-  height: 170px;
+  height: 190px;
   border: 1px solid #E7E7E7;
   padding: 14px 30px;
 }
